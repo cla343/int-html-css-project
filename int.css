@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, minmax(100px, auto)));
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    background-color: #0ea5e9;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+}
+
+.sidebar h4 {
+    font-size: 18px;
+}
+
+.sidebar-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-flex svg {
+    fill: white;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.header {
+    grid-column: 2 / 7;
+    grid-row: 1 / 2;
+}
+
+.header svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+}
+
+.head-text {
+    padding-left: 20px;
+}
+
+.header button {
+    background-color: #0ea5e9;
+    color: white;
+    margin: 15px;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+}
+
+input {
+    width: 55%;
+    margin: 5px 50px 0 20px;
+    border-radius: 20px;
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.button {
+    margin-left: 400px;
+    margin-top: 10px;
+}
+
+.head-one {
+    display: flex;
+    align-items: center;
+}
+
+.head-one > p {
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.head-two {
+    display: flex;
+}
+
+.head-two svg {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article {
+    grid-column: 2 / 6;
+    grid-row: 2 / 5;
+    background-color: #e2e8f0;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+}
+
+.grid-container div {
+    border: 1px solid #ddd; 
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border-left: 8px solid gold;
+    font-weight: bold;
+}
+.right-side .divider {
+    border-bottom: 1px solid #000; /* Line styling */
+    width: 90%; /* Line spans 80% of the div's width */
+    margin: 0 auto; /* Centers the line within the div */
+    border-radius: 0px;
+}
+
+.grid-container > div p {
+    font-weight: normal;
+}
+
+.right-side {
+    grid-row: 2 / 5;
+    grid-column: 6 / 7;
+    background-color: #e2e8f0;
+    padding: 10px;
+}
+
+.right-side div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: left;
+    margin: auto;
+}
+
+.divider {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-one {
+    margin-bottom: 98px;
+    font-weight: bold;
+}
+
+.right-one p {
+    font-weight: normal;
+    font-size: 12px;
+    margin: 12px 0px 0px 0px;
+}
+
+.article > p {
+    font-weight: bold;
+}
+
+.right-side > p {
+    font-weight: bold;
+}
+
+.right-side h6 {
+    font-size: 14px;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+.right-two p {
+    font-size: 12px;
+}
+
+.right-two svg {
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+}
+
+.right-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
